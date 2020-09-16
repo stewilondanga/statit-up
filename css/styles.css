@@ -81,12 +81,12 @@ tbody tr:hover td {
   color: black;
 }
 
-/*.asc::after {
-  content:"↑";
-  padding-left:1ch;
+.asc::after {
+  content: "↑";
+  padding-left: 1ch;
 }
 
-.desc::after {
+/*.desc::after {
   content:"↓";
   padding-left:1ch;
 }
