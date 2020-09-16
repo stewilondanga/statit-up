@@ -48,13 +48,13 @@ table {
   margin: 1em 0 10em;
 }
 
-/*caption {
-  padding:1ch;
-  font-size:2em;
-  font-variant:small-caps;
+caption {
+  padding: 1ch;
+  font-size: 2em;
+  font-variant: small-caps;
 }
 
-th, td {
+/*th, td {
   text-align:left;
   padding:1ch;
 }
