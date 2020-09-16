@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -21,11 +27,6 @@
   height: 1.5em;
 }
 
-body {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
 
 table {
   table-layout:fixed;
