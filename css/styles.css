@@ -95,10 +95,11 @@ td:first-of-type {
   color: lightgray
 }
 
-/*.elm-name {color:black}
+.elm-name {
+  color: black
+}
 
-
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
