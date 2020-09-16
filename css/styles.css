@@ -32,8 +32,11 @@ th {
   width: 28ch
 }
 
-/*.prop-col {width:11ch}
-.subobj-col {width:15ch}
+.prop-col {
+  width: 11ch
+}
+
+/*.subobj-col {width:15ch}
 
 
 /*
