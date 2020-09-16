@@ -59,13 +59,13 @@ th, td {
   padding: 1ch;
 }
 
-/*th {
-  background:#333;
-  color:#ddd;
-  transition:all 0.5s;
+th {
+  background: #333;
+  color: #ddd;
+  transition: all 0.5s;
 }
 
-th:hover {
+/*th:hover {
   cursor:pointer;
   background:#3ee;
   color:#222;
