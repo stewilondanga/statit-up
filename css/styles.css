@@ -43,12 +43,12 @@ th {
 /*
 styling
 */
-/*table {
-  box-shadow:inset 0 0 1ch #3ee;
-  margin:1em 0 10em;
+table {
+  box-shadow: inset 0 0 1ch #3ee;
+  margin: 1em 0 10em;
 }
 
-caption {
+/*caption {
   padding:1ch;
   font-size:2em;
   font-variant:small-caps;
