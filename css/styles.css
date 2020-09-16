@@ -28,8 +28,11 @@ th {
   top: 0;
 }
 
-/*.name-col {width:28ch}
-.prop-col {width:11ch}
+.name-col {
+  width: 28ch
+}
+
+/*.prop-col {width:11ch}
 .subobj-col {width:15ch}
 
 
