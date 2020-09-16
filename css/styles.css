@@ -71,12 +71,12 @@ th:hover {
   color: #222;
 }
 
-/*tbody tr:hover {
-  transition:all 0.3s;
-  background:#3ee;
+tbody tr:hover {
+  transition: all 0.3s;
+  background: #3ee;
 }
 
-tbody tr:hover td {
+/*tbody tr:hover td {
   transition:all 0.5s;
   color:black;
 }
