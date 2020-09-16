@@ -86,13 +86,12 @@ tbody tr:hover td {
   padding-left: 1ch;
 }
 
-/*.desc::after {
-  content:"↓";
-  padding-left:1ch;
+.desc::after {
+  content: "↓";
+  padding-left: 1ch;
 }
 
-
-td:first-of-type {color:lightgray}
+/*td:first-of-type {color:lightgray}
 .elm-name {color:black}
 
 
