@@ -54,12 +54,12 @@ caption {
   font-variant: small-caps;
 }
 
-/*th, td {
-  text-align:left;
-  padding:1ch;
+th, td {
+  text-align: left;
+  padding: 1ch;
 }
 
-th {
+/*th {
   background:#333;
   color:#ddd;
   transition:all 0.5s;
