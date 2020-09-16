@@ -65,13 +65,13 @@ th {
   transition: all 0.5s;
 }
 
-/*th:hover {
-  cursor:pointer;
-  background:#3ee;
-  color:#222;
+th:hover {
+  cursor: pointer;
+  background: #3ee;
+  color: #222;
 }
 
-tbody tr:hover {
+/*tbody tr:hover {
   transition:all 0.3s;
   background:#3ee;
 }
