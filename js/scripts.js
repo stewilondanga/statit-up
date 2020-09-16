@@ -1,10 +1,10 @@
 var navigate = (function() {
-	$('.dd').toggle();
-	$('.dd_btn').click(function() {
-		var dataName = $(this).attr('data-name');
-		$('.dd').hide();
-		$('.' + dataName).toggle();
-	});
+  $('.dd').toggle();
+  $('.dd_btn').click(function() {
+    var dataName = $(this).attr('data-name');
+    $('.dd').hide();
+    $('.' + dataName).toggle();
+  });
 })();
 
 { // main
@@ -20,7 +20,7 @@ var navigate = (function() {
   }
 
   // gen <tr>s; recycle
-  for (let i=0; i<db.length; i++) {
+  for (let i = 0; i < db.length; i++) {
     elTBody.insertAdjacentHTML("beforeend", `<tr>
     <td /><td /><td />
     </tr>`);
@@ -30,17 +30,22 @@ var navigate = (function() {
   elSort.addEventListener("click", onSort);
 
   // sort first col
-  onSort({target: elSort.children[0]});
+  onSort({
+    target: elSort.children[0]
+  });
 
   function onSort(e) {
     const elm = e.target;
     const field = elm.dataset.field;
-    const order = elm.dataset.order ? Number(elm.dataset.order) * -1: 1;
-    populate(db, makePred({order, field}));
+    const order = elm.dataset.order ? Number(elm.dataset.order) * -1 : 1;
+    populate(db, makePred({
+      order,
+      field
+    }));
     elm.dataset.order = order; // update
     for (const thElm of Array.from(elSort.children))
       thElm.classList.remove("asc", "desc");
-    elm.classList.add(order > 0 ? "asc": "desc");
+    elm.classList.add(order > 0 ? "asc" : "desc");
   }
 }
 
@@ -64,7 +69,7 @@ function propCount(elmCtor) {
 function subobjectCount(elmCtor) {
   let c = 0;
   let p = elmCtor.prototype;
-  while(p) {
+  while (p) {
     c += 1;
     p = Object.getPrototypeOf(p);
   }
@@ -94,7 +99,7 @@ function populate(db, sortFn) {
   for (const [i, dat] of db.entries()) {
     const trElm = trElms[i];
     const tdElms = trElm.children;
-    const [,s0,s1,s2] = dat.name.match(/^(HTML)(.+)(Element)$/);
+    const [, s0, s1, s2] = dat.name.match(/^(HTML)(.+)(Element)$/);
     tdElms[0].innerHTML = `${s0}<span class="elm-name">${s1}</span>${s2}`;
     tdElms[1].textContent = dat.pCount;
     tdElms[2].textContent = dat.soCount;
@@ -105,8 +110,11 @@ function populate(db, sortFn) {
 // It works for str and num.
 // {order} is either 1 or -1(desc)
 // {field} is a string key ... db[n][field]
-function makePred({order, field}) {
-  return function (a,b) {
+function makePred({
+  order,
+  field
+}) {
+  return function(a, b) {
     if (a[field] > b[field]) return order;
     else if (a[field] < b[field]) return -order;
     else 0;
