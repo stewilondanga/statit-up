@@ -19,11 +19,11 @@ body {
   height: 1.5em;
 }
 
-/*table {
-  table-layout:fixed;
+table {
+  table-layout: fixed;
 }
 
-th {
+/*th {
   position:sticky; top:0;
 }
 
