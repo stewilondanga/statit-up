@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -20,6 +20,81 @@ body {
 .my_social a img {
   height: 1.5em;
 }
+
+body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+table {
+  table-layout:fixed;
+}
+
+th {
+  position:sticky; top:0;
+}
+
+.name-col {width:28ch}
+.prop-col {width:11ch}
+.subobj-col {width:15ch}
+
+
+/*
+styling
+*/
+/*table {
+  box-shadow:inset 0 0 1ch #3ee;
+  margin:1em 0 10em;
+}
+
+caption {
+  padding:1ch;
+  font-size:2em;
+  font-variant:small-caps;
+}
+
+th, td {
+  text-align:left;
+  padding:1ch;
+}
+
+th {
+  background:#333;
+  color:#ddd;
+  transition:all 0.5s;
+}
+
+th:hover {
+  cursor:pointer;
+  background:#3ee;
+  color:#222;
+}
+
+tbody tr:hover {
+  transition:all 0.3s;
+  background:#3ee;
+}
+
+tbody tr:hover td {
+  transition:all 0.5s;
+  color:black;
+}
+
+.asc::after {
+  content:"↑";
+  padding-left:1ch;
+}
+
+.desc::after {
+  content:"↓";
+  padding-left:1ch;
+}
+
+
+td:first-of-type {color:lightgray}
+.elm-name {color:black}
+
 
 .containers {
   width: 520px;
